@@ -13,14 +13,14 @@ public class DrawManager {
 
     public DrawManager(PageManager pageManager) {
         this.pageManager = pageManager;
-        window = new JFrame("Cell Games"); //наше главное окно
+        window = new JFrame("Cell Games");
         Image img = new ImageIcon("src\\main\\resources\\krsimg\\Дерево.jpg ").getImage();
         window.setIconImage(img);
-        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//добавляем кнопку X,| закрывающую окно
-        window.setLayout(new BorderLayout()); //менедже компоновки
+        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        window.setLayout(new BorderLayout());
         window.setExtendedState(JFrame.MAXIMIZED_BOTH);
         window.setResizable(false);
-        window.setVisible(true); // ключаем видимость окна
+        window.setVisible(true);
         window.setFocusable(true);
         window.setFocusTraversalKeysEnabled(false);
         window.addKeyListener(new MyKey());
