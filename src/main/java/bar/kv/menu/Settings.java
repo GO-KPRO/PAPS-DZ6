@@ -119,9 +119,9 @@ public class Settings extends JComponent {
 
     void reset() {
         try {
-            File table = new File("C:\\Users\\eabaranov\\Desktop\\krMinesweeperTable\\Table.json");
+            File table = new File("src\\main\\resources\\krMinesweeperTable\\Table.json");
             Files.deleteIfExists(table.toPath());
-            table = new File("C:\\Users\\eabaranov\\Desktop\\krSudokuTable\\Table.json");
+            table = new File("src\\main\\resources\\krSudokuTable\\Table.json");
             Files.deleteIfExists(table.toPath());
         } catch (IOException e) {
             System.out.println("Can`t delete file");
