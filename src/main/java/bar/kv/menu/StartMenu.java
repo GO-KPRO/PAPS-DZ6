@@ -5,6 +5,7 @@ import bar.kv.managers.PageManager;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
+
 public class StartMenu extends JComponent {
 
     private final PageManager pageManager;

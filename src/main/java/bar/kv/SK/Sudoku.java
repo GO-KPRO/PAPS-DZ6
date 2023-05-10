@@ -377,6 +377,7 @@ public class Sudoku extends JComponent {
             help();
         }
     }
+
     boolean isSolved(SudokuCell[][] sudokuCells) {
         for (int i = 0; i < sudokuCells.length; ++i) {
             for (int j = 0; j < sudokuCells[0].length; ++j) {
