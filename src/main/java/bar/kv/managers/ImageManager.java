@@ -45,9 +45,9 @@ public class ImageManager {
         settingsButton = convertImage("src\\main\\resources\\krsimg\\SettingsButton.png");
         startGameButton = convertImage("src\\main\\resources\\krsimg\\StartGameButton.png");
         stopGameButton = convertImage("src\\main\\resources\\krsimg\\StopGameButton.png");
-        gameOfLife = openImage("src\\main\\resources\\krsimg\\life.png");
-        minesweeper = openImage("src\\main\\resources\\krsimg\\minesweeper.png");
-        sudoku = openImage("src\\main\\resources\\krsimg\\sudoku.png");
+        gameOfLife = convertImage("src\\main\\resources\\krsimg\\life.png");
+        minesweeper = convertImage("src\\main\\resources\\krsimg\\minesweeper.png");
+        sudoku = convertImage("src\\main\\resources\\krsimg\\sudoku.png");
     }
 
     private BufferedImage convertImage(String path) {

@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 public class InformationPage extends JComponent {
 
     private final PageManager pageManager;
-    private final String version = "0.4";
+    private final String version = "0.5";
     private final String text = "Клеточные игры - сборник простых игр, в которых игровое поле состоит из клеток. Приложение позволяет играть во все проекты в одном месте широкому кругу игроков. Каждая игра имеет свои настройки и темы оформления. Также приложение позволяет сохранять предыдущие рекорды.\n";
     private final String contact = "eabaranov_4@edu.hse.ru";
     private final String name = "Баранов Егор";

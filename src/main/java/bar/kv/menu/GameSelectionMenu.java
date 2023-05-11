@@ -75,14 +75,29 @@ public class GameSelectionMenu extends JComponent {
 
     void drawMinesweeperCard(Graphics graphics, int x, int y) {
         graphics.drawImage(pageManager.getImageManager().getMinesweeper(), x - 150, y - 75, 300, 150, null);
+        graphics.setColor(colorScheme.getMediumColor());
+        graphics.fillRect(x - 145, y - 70, 70, 30);
+        graphics.setColor(colorScheme.getDarkColor());
+        graphics.setFont(graphics.getFont().deriveFont(Font.PLAIN, 20));
+        graphics.drawString("Сапёр", x - 140, y - 50);
     }
 
     void drawSudokuCard(Graphics graphics, int x, int y) {
         graphics.drawImage(pageManager.getImageManager().getSudoku(), x - 150, y - 75, 300, 150, null);
+        graphics.setColor(colorScheme.getMediumColor());
+        graphics.fillRect(x - 145, y - 70, 80, 30);
+        graphics.setColor(colorScheme.getDarkColor());
+        graphics.setFont(graphics.getFont().deriveFont(Font.PLAIN, 20));
+        graphics.drawString("Судоку", x - 140, y - 50);
     }
 
     void drawLifeCard(Graphics graphics, int x, int y) {
         graphics.drawImage(pageManager.getImageManager().getGameOfLife(), x - 150, y - 75, 300, 150, null);
+        graphics.setColor(colorScheme.getMediumColor());
+        graphics.fillRect(x - 145, y - 70, 120, 30);
+        graphics.setColor(colorScheme.getDarkColor());
+        graphics.setFont(graphics.getFont().deriveFont(Font.PLAIN, 20));
+        graphics.drawString("Игра Жизнь", x - 140, y - 50);
     }
 
     void drawCard(Graphics graphics, int num, int x, int y) {

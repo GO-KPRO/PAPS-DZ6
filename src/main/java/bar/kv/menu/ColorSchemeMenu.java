@@ -18,9 +18,9 @@ public class ColorSchemeMenu extends JComponent {
         enableEvents(AWTEvent.MOUSE_EVENT_MASK);
         this.pageManager = pageManager;
         colorSchemes = new ArrayList<ColorScheme>();
-        colorSchemes.add(new ColorScheme(new Color(29, 44, 59), new Color(247, 236, 63), new Color(65, 41, 25)));
-        colorSchemes.add(new ColorScheme(new Color(20, 10, 48), new Color(223, 13, 33), new Color(254, 146, 55)));
         colorSchemes.add(new ColorScheme(new Color(20, 21, 27), new Color(210, 143, 32), new Color(112, 122, 142)));
+        colorSchemes.add(new ColorScheme(new Color(29, 44, 59), new Color(220, 20, 60), new Color(110, 20, 60)));
+        colorSchemes.add(new ColorScheme(new Color(20, 10, 48), new Color(223, 13, 33), new Color(254, 146, 55)));
         colorSchemes.add(new ColorScheme(new Color(113, 9, 170), new Color(255, 211, 0), new Color(159, 238, 0)));
         colorSchemes.add(new ColorScheme(new Color(0, 0, 0), new Color(255, 255, 255), new Color(128, 128, 128)));
     }

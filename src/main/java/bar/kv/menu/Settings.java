@@ -89,11 +89,9 @@ public class Settings extends JComponent {
 
     void drawSlider(Graphics graphics, int x, int y, int min, int max, int num, String str) {
         graphics.setColor(colorScheme.getBrightColor());
-        graphics.fillRect(x, y, 300, 100);
-        graphics.setColor(colorScheme.getDarkColor());
-        graphics.drawLine(x, y + 50, x + 300, y + 50);
+        graphics.fillRect(x - 25, y, 350, 100);
         graphics.setColor(colorScheme.getMediumColor());
-        graphics.fillRect(x - 5 + ((num - min) * 300) / (max - min), y, 10, 100);
+        graphics.fillRect(x - 15 + ((num - min) * 300) / (max - min), y + 10, 30, 80);
         graphics.setColor(colorScheme.getBrightColor());
         char[] chars = (str + num).toCharArray();
         graphics.drawChars(chars, 0, chars.length, x, y - 10);

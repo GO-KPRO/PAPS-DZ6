@@ -8,9 +8,9 @@ public class ColorScheme {
     private Color mediumColor;
 
     public ColorScheme() {
-        setDarkColor(new Color(29, 44, 59));
-        setBrightColor(new Color(247, 236, 63));
-        setMediumColor(new Color(65, 41, 25));
+        darkColor = new Color(20, 21, 27);
+        brightColor = new Color(210, 143, 32);
+        mediumColor = new Color(112, 122, 142);
     }
 
     public ColorScheme(Color darkColor, Color brightColor, Color mediumColor) {

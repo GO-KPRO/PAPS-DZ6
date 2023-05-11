@@ -254,15 +254,13 @@ public class GameOfLife extends JComponent {
 
     void drawSlider(Graphics graphics, int num) {
         graphics.setColor(colorScheme.getDarkColor());
-        graphics.fillRect(0, 300, 100, 300);
-        graphics.setColor(colorScheme.getBrightColor());
-        graphics.drawLine(50, 300, 50, 600);
+        graphics.fillRect(0, 275, 100, 350);
         graphics.setColor(colorScheme.getMediumColor());
-        graphics.fillRect(0, 300 + ((num - 1) * 300) / 30, 100, 10);
+        graphics.fillRect(10, 300 + ((num - 1) * 300) / 30 - 10, 80, 30);
         graphics.setColor(colorScheme.getBrightColor());
         char[] chars = ("Скорость: " + num).toCharArray();
         graphics.setFont(graphics.getFont().deriveFont(Font.PLAIN, 15));
-        graphics.drawChars(chars, 0, chars.length, 0, 300);
+        graphics.drawChars(chars, 0, chars.length, 0, 270);
     }
 
     void calcCord() {
