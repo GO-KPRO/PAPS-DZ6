@@ -118,7 +118,9 @@ public class Minesweeper extends JComponent {
                     if ((x > fieldX + i * cellSize) && (x < fieldX + i * cellSize + cellSize)) {
                         if ((y > fieldY + j * cellSize) && (y < fieldY + j * cellSize + cellSize)) {
                             isMistake = false;
-                            open(i, j);
+                            if (!field[i][j].isFlag()) {
+                                open(i, j);
+                            }
                             repaint();
                             if (isWin()) {
                                 winGame();
