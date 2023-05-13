@@ -369,6 +369,8 @@ public class Sudoku extends JComponent {
         int y = random.nextInt(0, 9);
         if (!field[x][y].isOpen()) {
             field[x][y].setOpen(true);
+            curX = x;
+            curY = y;
             repaint();
             if (isSolved(field)) {
                 winGame();
